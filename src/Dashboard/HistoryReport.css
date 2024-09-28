@@ -1,0 +1,154 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
+  }
+  
+  .navbar h4 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Sidebar Styling */
+  .bg-success {
+    background-color: #009879 !important;
+  }
+  
+  .bg-success h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .bg-success .dropdown-item {
+    padding: 10px 15px;
+  }
+  
+  .bg-success .dropdown-item:hover {
+    background-color: #007856;
+  }
+  
+  /* Table Styling */
+  .table {
+    margin-top: 20px;
+  }
+  
+  .table thead {
+    background-color: #009879;
+    color: #fff;
+  }
+  
+  .table tbody tr {
+    background-color: #f4f4f4;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  .text-dark{
+    /* left: 100px; */
+   
+    position: relative;
+  }
+
+
+
+
+  /* General table styling */
+.table {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95rem;
+  width: 100%; /* Ensure the table uses the full width */
+}
+
+.table th {
+  background-color:  #009879; /* Dark header background */
+  color: white; /* White text for contrast */
+  padding: 10px 15px; /* Better padding for readability */
+  text-align: center; /* Center-align header text */
+}
+
+.table td {
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Striped rows for clarity */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color:  #009879;
+}
+
+/* Style for 'Show More'/'Show Less' links */
+.text-end a.text-primary {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Pagination styling */
+.pagination {
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.pagination .page-item .page-link {
+  color:  #009879; /* Dark color */
+  border-radius: 5px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #28a745; /* Active page color */
+  border-color: #28a745;
+}
+
+/* Adjust font for table */
+.table td,
+.table th {
+  font-size: 14px;
+}
+
+/* No need for scroll */
+.table-responsive {
+  max-height: 400px; /* Optional: Limit height without scroll */
+}
+
+
+/* HistoryReport.css */
+
+.table-responsive {
+  margin-top: 1rem;
+}
+
+
+
+.input-group {
+  margin-right: 0.5rem; /* Adjust spacing as necessary */
+}
+
+
+.table th,
+.table td {
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.table {
+  width: 100%; /* Ensure the table takes full width */
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem; /* Adjust font size on smaller screens */
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+}
+
+

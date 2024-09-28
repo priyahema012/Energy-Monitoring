@@ -1,0 +1,188 @@
+.consume {
+    right: 290px;
+    position: relative;
+    top: 20px;
+    height: 250px;
+    width: 260px;
+
+   
+}
+
+.call{
+  bottom: 200px;
+  position: relative;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.powerik{
+   width: 450px;
+   right: 10px;
+   position: relative;
+}
+.power{
+    margin-left: 900px;
+    width: 250px;
+    /* right: 190px; */
+    right: 170px;
+   bottom: 320px;
+   height: 250px;
+   position: relative;
+   
+}
+
+.device-grid {
+    display: grid;
+    grid-template-columns: "200px 500px 300px";
+    gap: 1rem; /* Adjust the spacing between items */
+  }
+  
+  .relayed{
+    display: grid;
+    grid-template-columns: "200px 300px 400px 500px 600px";
+    gap: 1rem; /* Adjust the spacing between items */
+  }
+  /* Add padding and background colors to the overall section */
+.consumption-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  /* Styling for individual cards */
+  .consumption-card, .data-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .device{
+    text-align: center;
+  }
+  
+  /* Styling for buttons inside cards */
+  .data-card button {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+    color: white;
+  }
+  
+  /* Styling for the text */
+  .consumption-card .value, .data-card p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .data-card p strong {
+    color: #ff4d4f;
+    font-weight: bold;
+  }
+  
+  /* Adjust button size and alignment */
+  button.ant-btn-circle {
+    font-size: 14px;
+    line-height: 1;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  /* Icons inside the cards */
+  .icon {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Space adjustments for rows */
+  .mt-2 {
+    margin-top: 16px;
+  }
+  
+  /* Ensuring responsiveness */
+  @media screen and (max-width: 768px) {
+    .consumption-section {
+      padding: 10px;
+    }
+  
+    .consumption-card, .data-card {
+      padding: 15px;
+    }
+  
+    button.ant-btn-circle {
+      font-size: 12px;
+      height: 25px;
+      width: 25px;
+    }
+  
+    .consumption-card .value, .data-card p {
+      font-size: 16px;
+    }
+  }
+
+  .device {
+    display: flex;
+    flex-direction: column; /* Ensure each device name and status are in separate rows */
+    align-items: center;    /* Center align the text */
+    text-align: center; 
+   
+  }
+  
+  
+
+ 
+
+ 
+ 
+  
+  .device strong {
+    font-weight: bold;      /* Make device names bold */
+    font-size: 1.0rem;     /* Optional: increase font size for visibility */
+  }
+  
+  .device span {
+    font-weight: normal; 
+    color: hsl(60, 89%, 39%);  
+     /* Keep status font weight normal */
+  }
+
+  .device {
+    font-weight: 600; /* You can use values like 700, 800, or 900 for bolder text */
+  }
+  
+  .dashboardContainer {
+    max-width: 1200px; /* Set a max-width to keep the content aligned */
+    margin: 0 auto; /* Center the dashboard horizontally */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.device {
+    font-size: 18px;
+    right:"10px";
+    position: relative;
+}
+
+.consumption-card {
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background for contrast */
+}
+
+.data-card {
+    background-color: #f9f9f9; /* Slightly lighter background for data cards */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .dashboardContainer {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
+
+  
+  

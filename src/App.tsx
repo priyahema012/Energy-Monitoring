@@ -1,24 +1,60 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'; 
+import Dashboard from './Dashboard/Dashboard';
+import Login from './Login/Login'; // Uncomment this
+import { AuthPrivateRouter, HomePrivateRouter } from './Router/PrivateRouter';
+import HistoryReport from './Dashboard/HistoryReport';
+import Notification from './Notification/Notification';
+import Navbar from './Navbar/Navbar';
+
 
 function App() {
+  const router = createBrowserRouter([
+    {
+     
+      element: <HomePrivateRouter />,
+      children: [
+        {
+          path: "/",
+          element: <Navbar />,
+          children: [
+            {
+              path: "dash",
+              element: <Dashboard />,
+            },
+            {
+              path: "history",
+              element: <HistoryReport />, // Ensure this is under HomePrivateRouter
+            },
+            {
+              path: "notification",
+              element: <Notification />, // Ensure this is under HomePrivateRouter
+            },
+            
+          ],
+        },
+      ],
+    },
+
+
+
+  
+    {
+      path: "/",
+      element: <AuthPrivateRouter />, // Parent for login route
+      children: [
+        {
+          path: "login",
+          element: <Login />, // Ensure this is under AuthPrivateRouter
+        },
+      ],
+    },
+  ]);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }

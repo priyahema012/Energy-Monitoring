@@ -1,0 +1,12 @@
+/* Notification.module.css */
+.downloadButton {
+  background-color: orange; /* Change this to your desired color */
+  color: white; /* Change text color if needed */
+  border: none; /* Remove default border */
+}
+
+.downloadButton:hover {
+  background-color: darkorange; /* Darker color on hover */
+}
+
+  

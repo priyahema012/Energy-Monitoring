@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .bg-success {
+    background-color: #00a19b !important;
+  }
+  
+  .text-white {
+    color: white !important;
+  }
+  
+  .vh-100 {
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  .device-details {
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  .image{
+    background-color: blue;
+  }

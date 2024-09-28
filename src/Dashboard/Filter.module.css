@@ -1,0 +1,38 @@
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; /* Adjust the max width */
+}
+
+.formRow {
+  display: flex;
+  gap: 20px; /* Adjust the spacing between items */
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.formItem {
+  margin-bottom: 0;
+  min-width: 200px; /* Adjust as needed */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.submitButton, .resetButton {
+  min-width: 100px;
+}
